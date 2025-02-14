@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Ticketing System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <form action="success.html">
+        <h1 class="login-title">Login form</h1>
+            <table class="form-container">
+                <tr>
+                    <td colspan="2"> <div id="alert" style="height: 50px; text-align: center; padding-top: 5px;"></div></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" id="pswrd"></td>
+                </tr>   
+            </table>
+        <input class="button-center" type="submit" value="Login" onclick="validate()">
+        <br>
+        <span class="login-signup">Don't have an account? <a href="./signup.html"> Signup </a> now </span>
+    </form> 
+    <script src ="login.js"></script>
+        <footer class="page-footer font-small blue">
+      <br /><br />
+      <div class="footer-copyright text-center py-3" style="color: white">
+        © 2025 Copyright
+        <a href="https://QuestAirlines/"> QuestAirlines</a>
+      </div>
+    </footer>
+</body>
+</html>

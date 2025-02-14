@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Airline Ticketing System</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+        <form action="success1.html">
+            <h1 class="login-title">SignUp</h1>
+            <table  class="form-container">
+                <tr>
+                    <td colspan="2"> <div id="alert" style="height: 50px; text-align: center; padding-top: 5px;"></div></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="Email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" id="password"></td>
+                </tr>   
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td><input type="password" id="cpassword"></td>
+                </tr>  
+            </table>
+            <input class="button-center" type="submit" value="Signup" onclick="validate()">
+        <br>
+        <span class="login-signup">Already have an account? <a href="./success.html"> Signin </a> now </span>
+        </form>
+        <script src="signup.js"></script>
+        <footer class="page-footer font-small blue">
+      <br /><br />
+      <div class="footer-copyright text-center py-3" style="color: white">
+        © 2021 Copyright
+        <a href="https://comakeairlines.herokuapp.com/"> CoMakeAirlines</a>
+      </div>
+    </footer>
+</body>
+</html>

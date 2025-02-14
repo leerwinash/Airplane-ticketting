@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Airline Ticketing System</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">QuestAirlines</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./myflights.html">My flights</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./bookflight.html">Book flight</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./success.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    </div>
+    <br>
+    <div class="container full-page">
+        <h1 class="login-title">Book your next flight</h1>
+        <br>
+        <form>
+            <div class="form-group left-form">
+              <label for="flight-id">Flight id</label>
+              <select class="form-control" id="flight-id">
+                <option>#0134 Malaysia-Thailand</option>
+                <option>#0123 Thailand-Malaysia</option>
+                <option>#5346 Singapore-Malaysia</option>
+                <option>#5346 Malaysia-Singapore</option>
+              </select>
+            </div>
+            <div class="form-group left-form">
+                <label for="class-type">Class</label>
+                <select class="form-control" id="class-type">
+                <option>First class (300)</option>
+                <option>Business class(200)</option>
+                <option>Economy class(100)</option>
+              </select>
+            </div>
+            <div class="form-group left-form">
+              <label for="travel-date-time">Date of travel</label>
+              <input class="form-control" type="date" name="travel-date-time" id="travel-date-time">
+            </div>
+            <div class="form-group left-form">
+                <label for="passengers">Passengers</label>
+                <input class="form-control noOfPassengers" type="number" name="passengers"  id ="passengers-count"  onkeydown="limit(this)" onkeyup="limit(this)" min="1" max="5"  onchange="updateTotalPrice">
+            </div>
+          </form>
+          <br>
+          <input class="button-center" type="submit" value="Book" onclick="moreForm()">
+    </div>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+        <footer class="page-footer font-small blue">
+      <br /><br />
+      <div class="footer-copyright text-center py-3" style="color: white">
+        © 2025 Copyright
+        <a href="https://comakeairlines.herokuapp.com/"> QuestAirlines</a>
+      </div>
+    </footer>
+</html>
